@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bingus.css">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // alert("you are now working with jquery")
+            $('h1 span').click(function () {
+                $('button').toggle();
+            })
+            $('button').click(function (){
+                $('h1 span').hide();
+                $('p').append('button');
+            })
+
+
+
+        })
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Welcome to My jquery assignment! Click <span style="color:red">THIS</span> text to show the hidden button</h1>
+        <button style ="display:none">Hi click me to make the text dissapear!</button>
+        <p></p>
+    </div>
+</body>
+
+
+</html>
